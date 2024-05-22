@@ -2,10 +2,14 @@ package com.ecommerce.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class PaymentInfomation {
 	@Column(name = "cardholder_name")
 	private String cardholderName;
